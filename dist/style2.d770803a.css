@@ -1,0 +1,397 @@
+
+
+.calc {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, rgba(62, 62, 145, 0.544), rgba(62, 62, 145, 0.644)), url(calcbg.d745358d.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 0;
+}
+.calc_block {
+    /* width: 100%; */
+    outline: 1px solid rgb(192, 175, 175);
+    /* margin: 0 auto; */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 0%, #5C5A5A 150%);
+    padding-bottom: 10px;
+}
+.tabs {
+    /* margin: 0 auto;
+    width: 600px;
+    padding: 15px 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+.tab {
+    border-radius: 15px 0 0 0;
+    padding: 15px 14px;
+    font-size: 18px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.67) 25%, #323131 100%);
+    color: #E4DFDB;
+    cursor: pointer;
+
+}
+.tab:not(:last-child) {
+    margin-right: 4px;
+}
+.tabs_corp {
+    border-radius: 15px 15px 0 0;
+}
+.tabs_shop {
+    border-radius: 0 15px 0 0;
+}
+.active {
+    background: rgba(255, 213, 0, 0.949);
+    color: #000;
+    position: relative;
+}
+.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: inline-block;
+    background: rgba(255, 213, 0, 0.949);
+    bottom: -10px;
+    left: 0;
+    
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>> <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.calc_title {
+    margin-top: 10px;
+    text-align: center;
+    color: #E4DFDB;
+    font-size: 1.5em
+}
+.logick {
+    margin-top: 20px;
+}
+.logick_block {
+    /* display: inline-block; */
+    /* width: calc(48% - 10px); */
+    margin-left: 20px;
+    font-size: 17px;
+    color: #E4DFDB;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: .4s;
+    padding: 5px;
+    position: relative;
+}
+
+.logick_block:hover {
+    border: 1px solid rgba(255, 255, 255, 0.363);
+}
+/* .block_text_first {
+    position: absolute;
+    top: 45px;
+    left: -65px;
+} */
+.title_block_wrap {
+    position: relative;
+}
+.tasks {
+    position: absolute;
+    left: -68px;
+    cursor: pointer;
+    top: 7px;
+}
+.tasks1 {
+    position: absolute;
+    left: -68px;
+    cursor: pointer;
+    top: 7px;
+}
+.tasks2 {
+    position: absolute;
+    left: -68px;
+    cursor: pointer;
+    top: 7px;
+}
+
+.logick_block > span {
+    color: rgb(241, 241, 253);
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    opacity: 0.1;
+    transition: .4s;
+    font-size: 17px;
+    margin-left: 70px;
+    position: relative;
+}
+.line:before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: rgb(252, 252, 252);
+    position: absolute;
+    left: -7px;
+    bottom: -5px;
+}
+.line::after {
+    content: "";
+    width: 12px;
+    height: 1px;
+    background: rgb(252, 252, 252);
+    position: absolute;
+    left: -7px;
+    bottom: -5px;
+}
+.logick_block > span:hover .logick_block > span::after {
+    background: yellow;
+}
+.logick_block > span i {
+    margin-left: 15px;
+    margin-top: 1px;
+}
+
+.logick_block:hover.logick_block > span {
+    opacity: 1;
+}
+.firstBlockWrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.check {
+    margin-top: 10px;
+}
+.check input[type="checkbox"] {
+    display: none;
+}
+.check input[type="checkbox"]:checked + label::before {
+    background: rgb(240, 220, 220);
+    border-radius: 50%;
+    background-image: url(check-mark-31.03d8435e.png);
+    background-size: 100%;
+    border: 1px solid rgba(37, 39, 37, 0.26);
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    /* margin-right: 9px; */
+}
+.check input[type="checkbox"]:checked + label {
+    /* color: rgb(77, 224, 77) */
+    color: rgba(255, 213, 0, 0.949);
+}
+.check label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: rgb(226, 219, 219);
+    margin-right: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(26, 29, 26, 0.521);
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>> service <<<<<<<<<<<<<<<<<< */
+.service {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.service h2 {
+    text-align: center;
+    color: #E4DFDB;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    border-top: 1px solid rgb(224, 205, 205);
+    padding-top: 4px;
+}
+/* .service h2::before {
+    content: "";
+    width: 85%;
+    height: 2px;
+    background: linear-gradient(to right, #E4DFDB, rgba(255, 213, 0, 0.658), rgba(255, 213, 0, 0.949));
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+} */
+.add_service {
+    margin-bottom: 7px;
+    font-size: 16px;
+    color: #E4DFDB;
+}
+.add_service input[type="checkbox"] {
+    display: none;
+}
+.add_service input[type="checkbox"] + label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: rgb(226, 219, 219);
+    margin-right: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(8, 10, 8, 0.521);
+}
+
+.add_service input[type="checkbox"]:checked + label::before {
+    border-radius: 50%;
+    background: rgb(240, 220, 220);
+    background-image: url(check-mark-31.03d8435e.png);
+    background-size: 100%;
+    border: 1px solid rgba(37, 39, 37, 0.26);
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.add_service input[type="checkbox"]:checked + label {
+    color: rgba(255, 213, 0, 0.949);
+}
+.add_service input[type="number"] {
+    border: 1px solid #E4DFDB;
+    outline: none;
+    background: transparent;
+    color: #E4DFDB;
+    font-weight: 700;
+    font-size: 20px;
+    width: 65px;
+    height: 27px;
+}
+.add_service input[type="number"]:focus {
+    border: 1px solid rgba(255, 213, 0, 0.949)
+}
+.total {
+    width: 100%;
+    font-size: 25px;
+    color: #E4DFDB;
+    font-weight: 400;
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.total input {
+    width: 75px;
+    height: 35px;
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(51, 50, 43, 0.949);
+    margin-left: 25px;
+    background: rgba(255, 255, 255, 0.082);
+    outline: none;
+    border: none;
+    color: #E4DFDB;
+    text-align: center;
+}
+.total small {
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+/* >>>>>>>>>>>>>>>>>> Thubms up <<<<<<<<<<<<<<<<<<<<<< */
+.fa-thumbs-up {
+    color: rgba(255, 213, 0, 0.949);
+    display: none;
+}
+/* >>>>>>>>>>>>>>>>> <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.orderItem {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 22px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border: 1px solid #E4DFDB;
+    padding: 8px 10px 8px 10px;
+    display: inline-block;
+    transition: .2s;
+    position: relative;
+}
+/* .orderItem:before {
+    content: "⤻";
+    display: inline-block;
+    position: absolute;
+    right: 17px;
+
+} */
+.orderItem:hover, .previousStep:hover {
+    color: rgba(255, 213, 0, 0.949);
+    border: 1px solid rgba(255, 213, 0, 0.949);
+}
+.previousStep {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    border: 1px solid #E4DFDB;
+    padding: 8px 10px 8px 10px;
+    display: inline-block;
+    transition: .2s;
+    position: relative;
+}
+/* .previousStep:before {
+    content: "⤺";
+    display: inline-block;
+    position: absolute;
+    left: 17px;
+} */
+
+/* Кнопки вперед и назад */
+
+/* >>>>>>>> Наведення мишою класи для JS <<<<<<<<<<<<< */
+.arrow_text_left {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    opacity: 0;
+    transition: .3s;
+}
+.arrow_text_right {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    opacity: 0;
+    transition: .3s;
+}
+.activeRight {
+    background: rgb(255, 217, 0);
+    position: relative;
+}
+.activeRight::before {
+    transform: translate(40px, -16px) rotate(25deg);
+    background: rgb(255, 217, 0)
+}
+.activeLeft {
+    background: rgb(255, 217, 0);
+    vertical-align: middle;
+    position: relative;
+}
+.activeLeft::after {
+    transform: translate(-40px, 16px) rotate(25deg);
+    background: rgb(255, 217, 0);
+} 
+
+/* >>>>>>>>>>>>>>> Animation for span <<<<<<<<<<<<<<<<<<<<<<<<< */
+@-webkit-keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+   }
+   @keyframes pulsate {
+    50% { color: rgba(255, 255, 255, 0.726); text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px rgb(223, 223, 211), 0 0 8px rgba(255, 255, 255, 0.774); }
+   }
+   .blink7 {
+     color: rgba(235, 226, 226, 0.699);
+     text-shadow: 0 -1px rgba(0,0,0,.1);
+     background: rgba(239, 241, 239, 0);
+     -webkit-animation: pulsate 1.2s linear infinite;
+     animation: pulsate 1.5s linear infinite;
+   }
+   /* >>>>>>>>>>>>>>>> <<<<<<<<<<<<<<<<<<<<<<<<<< */

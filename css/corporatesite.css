@@ -1,0 +1,361 @@
+/** {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'PT Sans Caption', sans-serif;
+}
+body {
+	/*color: black;
+	font-family: sans-serif;
+	overflow: hidden;
+}*/
+.wrapper {
+	max-width: 1340px;
+	margin: 0 auto;
+	padding: 30px 95px;
+	height: 100%;
+
+
+
+}
+/*
+.logo_svoe{
+	background-image: url(logo_svoe.png);
+	background-repeat: no-repeat;
+}*/
+.calc_block {
+	width: 100%;
+	
+	margin: 0 auto;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 0%, #5C5A5A 150%);
+
+}
+
+.btn_calc{
+    text-decoration: none;
+    font-weight: 400;
+    border: 1px solid #E4DFDB;
+    font-family: sans-serif;
+    color: #fff;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 15px 15px;
+    padding-left: 78px;
+    padding-right: 78px;
+    display: inline-block;
+    transition: 2s;
+    margin-top: 25px;
+    margin-bottom: 50px;
+
+}
+.btn_calc:hover{
+	border: 1px solid rgba(255, 213, 0, 0.949);
+	transition: 0.5s;
+	cursor: pointer;
+	color: rgba(255, 213, 0, 0.949);
+	
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< Block_3 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.all_offer_block {
+	padding-bottom: 10px;
+	backface-visibility: hidden;
+
+}
+
+.block_3 {
+	font-family: 'PT Sans Caption', sans-serif;
+	
+	background-image: linear-gradient(to right, rgba(62, 62, 145, 0.544), rgba(62, 62, 145, 0.544)), url(../img/3_block/corporate-img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-color: #000000e0;
+	perspective: 1000;
+
+}
+
+.block3_price {
+	padding-bottom: 25px;
+	padding-top: 25px;
+	color: #E4DFDB;
+}
+
+.button9 {
+    margin-left: 780px;
+    margin-top: 10px;
+    height: 50px;
+    width: 50px; 
+	cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    user-select: none;
+    padding: 1em 1em;
+    background-repeat: no-repeat;
+}
+
+.button9 img{
+	 display: inline-block;
+     border: 1px solid rgba(255, 255, 255, 0.25);
+     height: 50px;
+     width: 50px;
+     margin:0 auto;
+}
+
+.button9 img:hover{
+	display: inline-block;
+	border-color: rgba(255, 213, 0, 0.949);
+    margin:0 auto;
+    /*background-color: #161414e0;
+    /*-webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);*/
+}
+
+a.button9:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+
+.offer__item:hover {
+    /*background-image:url(Фон-лэндинг-пэйдж.png);
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-color: white;
+    text-align: center;*/
+    -webkit-transform: rotateY(180deg);/*одна сторона*/
+}
+
+.offer__item:hover .flipper, .offer__item:hover .flipper {
+    -webkit-transform: rotateY(180deg);
+ 
+}
+
+/*.flipper {
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.front, .back, .offer__text {
+    backface-visibility: hidden;
+}
+*/
+.front {
+    z-index: 1;
+}
+
+
+.offer__item {
+	margin-top: 10px;
+	display: inline-block;
+	margin-right: 20px;
+	cursor: pointer;
+	background-color: #efedeb;/*цвет фон под текстом*/
+	transition: 0.5s;
+
+
+}
+.offer__item:hover .offer__title__wrap,
+.offer__item:hover #btn-order {
+	/*background: rgba(255, 213, 0, 0.949);*/
+	transition: 0.5s;
+	cursor: pointer;
+    backface-visibility: hidden;
+    /*-webkit-transform: rotateY(180deg);*/
+ 
+}
+.offer__item:hover .offer__title__wrap span {
+	color: #E4DFDB;
+	transition: 0.5s;
+	/*backface-visibility: hidden;
+	/*font-size: 60px;*/
+
+}
+#btn-order:hover {
+	background: rgba(255, 213, 0, 0.949);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: black;
+}
+
+.offer__title__wrap {
+	height: 170px;
+	background: #161414e0;
+	position: relative;
+
+}
+
+
+.offer__wrap {
+	width: 121px;
+	height: 121px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	margin: 0 auto;
+	margin-top: 35px;
+	box-shadow: 0 0 15px black;
+
+
+}
+.offer__price {
+	width: 120px;
+	height: 120px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: black;
+
+
+}
+.offer__title__wrap span {
+	color: #E4DFDB;
+	font-family: sans-serif;
+	font-size: 30px;
+	letter-spacing: 1.8px;
+	margin-top: 30px;
+	display: inline-block;
+
+
+}
+.offer__title__wrap big {
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 20px;
+
+
+}
+.offer__text {
+	font-size: 16px;
+	text-align: left;
+	padding-top: 55px;
+	margin: 20px;
+	color: #999999;
+	line-height: 24px;
+	backface-visibility: hidden;
+
+}
+.offer__text b {
+	color: #32CD32;
+}
+.offer__text a {
+	color: red;
+}
+.offer__title__wrap small {
+	font-size: 10px;
+	margin-right: 5px;
+	color: #999999;
+}
+.offer__title__wrap span {
+	text-align: center;
+}
+.offer__text p {
+	padding-bottom: 10px;
+}
+#btn-order {
+	width: 135px;
+	height: 45px;
+	margin-top: 15px;
+	font-size: 19px;
+	background: #161414e0;
+	color: #E4DFDB;
+	cursor: pointer;
+	border-color: #05050547;
+}
+.btn-center {
+	text-align: center;
+	padding-bottom: 10px;
+
+}
+
+/* >>>>>>>>>>>>>> Переключения Вперед-Назад <<<<<<<<<<<<<<<< */
+
+.arrows {
+	position: relative;
+	height: 100px;
+}
+.arrows_line {
+	position: absolute;
+	top: 54px;
+	left: 500px;
+}
+.arrow {
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	position: relative;
+}
+.arrow:not(:last-child) {
+	margin-right: 0px;
+}
+.arrows_line_middle {
+	width: 150px;
+	height: 3px;
+	background: rgba(255, 247, 244, 0.9);
+	position: relative;
+}
+.arrows_line_middle::before,
+.arrows_line_middle::after {
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 3px;
+	background: rgba(255, 249, 244, 0.9);
+	left: 37px;
+	transition: .5s;
+}
+.arrows_line_middle:before {
+	transform: translateY(-20px);
+}
+.arrows_line_middle:after {
+	transform: translateY(20px);
+}
+.arrows_left {
+	background: rgba(40, 142, 231, 0.1);
+}
+.arrows_right {
+	background: rgba(224, 189, 18, 0.1);
+}
+.arrows_line_middle:hover .arrows_line_middle:before {
+	transform: translate(40px, -16px) rotate(25deg);
+}
+
+/* >>>>>>>> Наведення мишою класи для JS <<<<<<<<<<<<< */
+.arrow_text_left {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+	opacity: 0;
+	transition: .3s;
+}
+.arrow_text_right {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	opacity: 0;
+	transition: .3s;
+}
+.activeRight {
+	background: rgb(255, 217, 0);
+	position: relative;
+}
+.activeRight::before {
+	transform: translate(44px, -12px) rotate(16deg);
+	background: rgb(255, 217, 0)
+}
+.activeLeft {
+	background: rgb(255, 217, 0);
+	vertical-align: middle;
+	position: relative;
+}
+.activeLeft::after {
+	transform: translate(-38px, 12px) rotate(16deg);
+	background: rgb(255, 217, 0);
+} 

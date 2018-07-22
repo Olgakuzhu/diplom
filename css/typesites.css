@@ -1,0 +1,207 @@
+/** {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}*/
+#number2 {
+	height: 100%;
+}
+.wrapper2 {
+	max-width: 1340px;
+	margin: 0 auto;
+	padding: 30px 95px;
+}
+.all-items-wrap {
+	display: flex;
+	align-items: flex-start;
+	text-align: center;
+	height: 630px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<< Block_2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.calc_block2 {
+	width: 100%;
+	outline: 1px solid rgb(192, 175, 175);
+	margin: 0 auto;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 0%, #5C5A5A 150%);
+}
+.block2-text {
+	padding-left: 15px;
+}
+.block2-list {
+	padding-left: 50px;
+	padding-right: 5px;
+}
+.block_2 {
+	background-image: linear-gradient(to right, rgba(62, 62, 145, 0.544), rgba(62, 62, 145, 0.544)), url(../img/2_block/img-block2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 0;
+	/*height: 100vh;*/
+}
+.block2_main_text {
+	margin: 0 auto;
+	color: #E4DFDB;
+}
+.block2_additional_text {
+	text-align: center;
+	padding-bottom: 15px;
+}
+.description {
+	height: 132px;
+	width: 310px;
+	border: 1px solid black;
+	padding-top: 50px;
+	margin-top: 15px;
+	text-align: left;
+	overflow: hidden;
+	background-color: #efedeb;
+	font-size: 18px;
+	position: absolute;
+}
+.website-image, .shop-image, .landing-image {
+	margin-top: 300px;
+	height: 380px;
+	border: 1px solid black;
+	margin-top: 20px;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: #efedeb;
+	width: 310px;
+	margin-top: 170px;
+}
+.landing-image {
+	background-image: url(../img/2_block/land.jpg);
+	background-size: 63%;
+}
+.website-image{
+	background-image: url(../img/2_block/corp.jpg);
+	background-size: 92%;
+}
+.shop-image {
+	background-image: url(../img/2_block/shop.jpg);
+	background-size: 80%;
+}
+.all-block2 {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.all-block2:hover .description {
+	background: rgb(244, 223, 119);
+	height: 355px;
+	transition: .7s ease-in-out;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.shop-image:hover, .website-image:hover, .landing-image:hover {
+	height: 450px;
+	transition: .5s ease-in;
+	z-index: 1;
+	transform: translate(0px, -63px);
+	cursor: pointer;
+}
+.icon-block2 {
+	width: 60px;
+	position: fixed;
+	transform: translate(115px, -80px);
+}
+/* >>>>>>>>>>>>>> Переключения Вперед-Назад <<<<<<<<<<<<<<<< */
+.arrows {
+	position: relative;
+	/*margin-bottom: 15px;*/
+}
+.arrows_line {
+	position: absolute;
+	top: 54px;
+	left: 505px;
+	}
+.arrow {
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	position: relative;
+}
+.arrow:not(:last-child) {
+	margin-right: 0px;
+}
+.arrows_line_middle {
+	width: 150px;
+	height: 3px;
+	background: rgba(255, 247, 244, 0.9);
+	position: relative;
+}
+.arrows_line_middle::before,
+.arrows_line_middle::after {
+	content: "";
+	position: absolute;
+	width: 75px;
+	height: 3px;
+	background: rgba(255, 249, 244, 0.9);
+	left: 37px;
+	transition: .5s;
+}
+.arrows_line_middle:before {
+	transform: translateY(-20px);
+}
+.arrows_line_middle:after {
+	transform: translateY(20px);
+}
+.arrows_left {
+	background: rgba(40, 142, 231, 0.1);
+}
+.arrows_right {
+	background: rgba(224, 189, 18, 0.1);
+}
+.arrows_line_middle:hover .arrows_line_middle:before {
+	transform: translate(40px, -16px) rotate(25deg);
+}
+/* >>>>>>>> Наведення мишою класи для JS <<<<<<<<<<<<< */
+.arrow_text_left {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+	opacity: 0;
+	transition: .3s;
+}
+.arrow_text_right {
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	opacity: 0;
+	transition: .3s;
+}
+.activeRight {
+	background: rgb(255, 217, 0);
+	position: relative;
+}
+.activeRight::before {
+	transform: translate(40px, -12px) rotate(16deg);
+	background: rgb(255, 217, 0)
+}
+.activeLeft {
+	background: rgb(255, 217, 0);
+	vertical-align: middle;
+	position: relative;
+}
+.activeLeft::after {
+	transform: translate(-38px, 12px) rotate(16deg);
+	background: rgb(255, 217, 0);
+}
